@@ -1,0 +1,15 @@
+<div class="container">
+  <h3>
+    Welcome to {{ title }}!
+  </h3>
+
+  <!-- 1️⃣ Setup a div to contain the form -->
+  <div id="cotter-form-container" style="width: 300px; height: 300px;"></div>
+  <!-- This is to show you how the response looks like -->
+  <div *ngIf="success" id="user-response">
+    <div class="success">Verification Success</div>
+    <br />
+    <div class="title">User info from Cotter:</div>
+    <pre>{{ payloadString }}</pre>
+  </div>
+</div>
